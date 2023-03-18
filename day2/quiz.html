@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,29 +18,11 @@
         <p id="ans-result"></p>
         <p id="ans-correct"></p>
         <div><a href="https://www.google.com">google</a></div>
-
         <button id="ans-button">check Answer</button>
     </body>
     <script src="js/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#ans-button').click(function () {
-                let answer = $('#quiz-Box').val();
-                console.log(answer);
-                if (answer === 'Lahore' || answer === 'lahore') {
-                    $('#div-wrong-ans').remove();
-                    $('#ans-result').text('your answers is correct');
-                } else {
-                    $('#div-wrong-ans').remove();
-                    $('#ans-result').before('<div id="div-wrong-ans" style="color:red;"> your answers is wrong </div>');
-                    $('#ans-result').text('Correct Answer is Lahore ');
-                    //        $('#ans-correct').text('Correct answer is Lahore ');
-                    let link = $('div > a').attr('href');
-                    console.log(link)
-                }
+    <script src="js/jQuery.js">
 
-            });
-        });
     </script>
 
 </html>
